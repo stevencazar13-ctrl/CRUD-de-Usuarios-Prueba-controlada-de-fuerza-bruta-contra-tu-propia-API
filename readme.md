@@ -1,24 +1,24 @@
-User Management API
+# User Management API
+
 API simple de gestión de usuarios con FastAPI.
 
-Ejecutar la API
+## Ejecutar la API
+
 Instalar FastAPI y Uvicorn, luego ejecutar el servidor. La documentación interactiva estará disponible en http://127.0.0.1:8000/docs
 
-Endpoints disponibles
-POST /register - Registrar nuevo usuario
+## Endpoints disponibles
 
-GET /List - Listar todos los usuarios
+- **POST /register** - Registrar nuevo usuario
+- **GET /List** - Listar todos los usuarios  
+- **GET /Search** - Buscar usuario por ID
+- **PUT /Update** - Actualizar información de usuario
+- **DELETE /Delete** - Eliminar usuario
+- **POST /Login** - Iniciar sesión
 
-GET /Search - Buscar usuario por ID
+## Pruebas
 
-PUT /Update - Actualizar información de usuario
-
-DELETE /Delete - Eliminar usuario
-
-POST /Login - Iniciar sesión
-
-Pruebas
-Respuestas exitosas esperadas:
+### Respuestas exitosas esperadas:
+```
 POST /register
 
 {
@@ -64,7 +64,6 @@ DELETE /Delete
   "message": "User deleted successfully"
 }
 POST /Login
-
 
 {
   "message": "Successful login"
